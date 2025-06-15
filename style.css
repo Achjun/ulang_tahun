@@ -27,7 +27,16 @@
   #beranda {
     display: flex;
     margin-left: 100px;
+
   }
+
+  .gmbar {
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 35%;
+  margin-left: 250px;
+}
+
   section {
     padding: 30px;
     text-align: center;
@@ -72,3 +81,49 @@
     width: 150px;
     border-radius: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+  /* Layout Beranda jadi kolom */
+  #beranda {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .gmbar {
+    width: 80% !important;
+    margin-left: 0 !important;
+  }
+
+  /* Ukuran roda dan teks */
+  .roda {
+    width: 200px;
+    height: 200px;
+    font-size: 14px;
+  }
+
+  /* Kartu Doa responsif */
+  .doa .card {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  /* Galeri foto lebih kecil */
+  .galeri img {
+    width: 100px;
+  }
+
+  /* Teks header & h2 lebih kecil */
+  header h1, h2 {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+}
